@@ -1,4 +1,4 @@
-# Musanze Harvest Intelligence Service
+<img width="949" height="530" alt="image" src="https://github.com/user-attachments/assets/8ad5d348-4471-40f7-97ed-7ee866f8cd00" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e67989e8-985f-4278-a39f-f63207e30f03" /># Musanze Harvest Intelligence Service
 
 **Student:** Dominic Onen
 **Registration number:** 25/28259
@@ -45,7 +45,8 @@ Extra command (evidence for the written interpretations): `python -m src.error_a
 | Operating system used in development | Linux |
 | **Tested on my own computer** | Windows 11, Python 3.14.7 |
 | Repository URL | https://github.com/DominicOnen/AI_A2_2528259 |
-| **Final commit hash** | _fill in: output of `git rev-parse HEAD`_ |
+| **Final commit hash** | _8a678b7c5c1dcab8c4d0830de8aa2b8eccc47af8
+_ |
 
 ## Files
 
