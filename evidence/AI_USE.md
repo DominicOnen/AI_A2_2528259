@@ -20,13 +20,13 @@ It generated the following.
 
 I have done the following myself (each box is ticked only if it is true):
 
-- [ ] I read the code and the assignment brief, and I can explain the main steps of the pipeline.
-- [ ] I ran `run_all.py`, `predict.py`, `pytest -q` and the API on my own computer.
-- [ ] I checked the numbers in the report against the files in `artifacts/`.
-- [ ] I rewrote the three interpretations in the report (one regression error, one classification error, one cluster) in my own words.
-- [ ] I understand why the simplest model within one standard error was chosen, and I can change a range rule or add a response field when asked.
-- [ ] I filled in the test log sections B and C and the README fields from my own computer.
-- [ ] I recorded the demonstration video and wrote the handwritten verification card myself.
+- [x ] I read the code and the assignment brief, and I can explain the main steps of the pipeline.
+- [ x] I ran `run_all.py`, `predict.py`, `pytest -q` and the API on my own computer.
+- [x ] I checked the numbers in the report against the files in `artifacts/`.
+- [x ] I rewrote the three interpretations in the report (one regression error, one classification error, one cluster) in my own words.
+- [ x] I understand why the simplest model within one standard error was chosen, and I can change a range rule or add a response field when asked.
+- [ x] I filled in the test log sections B and C and the README fields from my own computer.
+- [ x] I recorded the demonstration video and wrote the handwritten verification card myself.
 
 ## What the AI did not do
 
