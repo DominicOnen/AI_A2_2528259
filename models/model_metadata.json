@@ -33,9 +33,9 @@
   "clusters": 6,
   "fitted_on": "training rows only",
   "environment": {
-    "python": "3.13.16",
+    "python": "3.14.7",
     "scikit_learn": "1.9.1",
-    "numpy": "2.5.3",
-    "pandas": "3.0.5"
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
   }
 }

@@ -6,7 +6,7 @@
 ## What AI was used
 
 An AI assistant, **Claude (Anthropic)**, was used in a chat session to help produce this submission.
-It generated the following, working from the assignment brief and my registration number:
+It generated the following.
 
 | Part | What the AI generated |
 | --- | --- |
@@ -31,7 +31,7 @@ I have done the following myself (each box is ticked only if it is true):
 ## What the AI did not do
 
 - It did not run anything on my computer. The test run in section B of the test log is mine.
-- It did not record the video or write the card.
+- It also did not record the video or write the card.
 - It did not choose my seed: 8259 comes from my registration number 25/28259.
 
 ## Checks that were run during development (by the AI, in its own environment)
@@ -42,5 +42,5 @@ I have done the following myself (each box is ticked only if it is true):
 
 ## My own notes
 
-Anything I changed myself, what I learned, and which parts I can explain:
+
 

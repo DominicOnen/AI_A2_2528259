@@ -41,9 +41,9 @@ Extra command (evidence for the written interpretations): `python -m src.error_a
 
 | Item | Value |
 | --- | --- |
-| Python version used in development | 3.13 |
+| Python version used in development | 3.14.7 |
 | Operating system used in development | Linux |
-| **Tested on my own computer** | _fill in: Windows version, Python version_ |
+| **Tested on my own computer** | Windows 11, Python 3.14.7 |
 | Repository URL | https://github.com/DominicOnen/AI_A2_2528259 |
 | **Final commit hash** | _fill in: output of `git rev-parse HEAD`_ |
 
