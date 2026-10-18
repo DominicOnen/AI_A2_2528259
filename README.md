@@ -41,11 +41,12 @@ Extra command (evidence for the written interpretations): `python -m src.error_a
 
 | Item | Value |
 | --- | --- |
-| Python version used in development | 3.14.7 |
+| Python version used in development | 3.13.16 |
 | Operating system used in development | Linux |
-| **Tested on my own computer** | Windows 11, Python 3.14.7 |
+| **Tested on my own computer** | Windows 11 Pro 21H2, Python 3.14.7 (17 passed) |
 | Repository URL | https://github.com/DominicOnen/AI_A2_2528259 |
-| **Final commit hash** | _fill in: output of `git rev-parse HEAD`_ |
+| **Code commit hash** | 45907a7903dcc070ed1fc265db4fe439047e23cd |
+| Final commit hash | shown in the demo video and in the Moodle submission |
 
 ## Files
 
