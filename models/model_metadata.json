@@ -1,0 +1,41 @@
+{
+  "service": "Musanze Harvest Intelligence Service",
+  "verification_code": "AI-A2-8259",
+  "student_id": "ug2528259@ines.ac.rw",
+  "seed": 8259,
+  "dataset": "data/AI_A2_2528259.csv",
+  "dataset_sha256": "1c44802d7e37965c186e9aff1e98fc7919fe4a451fd3b68bd6101d14d89711dd",
+  "synthetic_data": true,
+  "rows_after_cleaning": 258,
+  "split": {
+    "train_rows": 206,
+    "test_rows": 52,
+    "random_state": 8259
+  },
+  "input_features": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha",
+    "season",
+    "cooperative_support"
+  ],
+  "cluster_features": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha"
+  ],
+  "regression_model": "linear_regression",
+  "classification_model": "logistic_regression",
+  "clusters": 6,
+  "fitted_on": "training rows only",
+  "environment": {
+    "python": "3.13.16",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5"
+  }
+}

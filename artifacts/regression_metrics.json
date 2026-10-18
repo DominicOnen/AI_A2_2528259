@@ -1,0 +1,68 @@
+{
+  "verification_code": "AI-A2-8259",
+  "seed": 8259,
+  "split": {
+    "train_rows": 206,
+    "test_rows": 52,
+    "random_state": 8259
+  },
+  "task": "regression",
+  "target": "yield_tons",
+  "baseline": "mean_baseline",
+  "selection_metric": "5-fold CV RMSE on training rows",
+  "models": {
+    "mean_baseline": {
+      "cv_rmse": 2.315546,
+      "cv_rmse_std": 0.178227,
+      "cv_mae": 1.870574,
+      "cv_r2": -0.066334,
+      "test_mae": 2.017446,
+      "test_rmse": 2.535003,
+      "test_r2": -0.030224
+    },
+    "linear_regression": {
+      "cv_rmse": 1.02136,
+      "cv_rmse_std": 0.101309,
+      "cv_mae": 0.823101,
+      "cv_r2": 0.786117,
+      "test_mae": 0.755944,
+      "test_rmse": 0.911566,
+      "test_r2": 0.866786
+    },
+    "random_forest": {
+      "cv_rmse": 1.317598,
+      "cv_rmse_std": 0.179885,
+      "cv_mae": 1.056704,
+      "cv_r2": 0.651012,
+      "test_mae": 1.12138,
+      "test_rmse": 1.413888,
+      "test_r2": 0.679517
+    },
+    "gradient_boosting": {
+      "cv_rmse": 1.234577,
+      "cv_rmse_std": 0.208127,
+      "cv_mae": 0.993157,
+      "cv_r2": 0.69501,
+      "test_mae": 1.018432,
+      "test_rmse": 1.294769,
+      "test_r2": 0.731243
+    }
+  },
+  "selected_model": "linear_regression",
+  "selection_reason": "linear_regression had the lowest 5-fold cross-validated RMSE on the training rows (1.02136 tons). Rule: choose the simplest model within one standard error of the best (RMSE <= 1.066667). Selected: linear_regression (RMSE 1.02136 tons) versus the mean baseline (2.315546 tons). Test rows were used only to report final scores, not to choose the model.",
+  "largest_test_error": {
+    "row_id": 65,
+    "actual_yield_tons": 15.3333,
+    "predicted_yield_tons": 12.778728,
+    "error_tons": -2.554572,
+    "inputs": {
+      "rainfall_mm": 1033.1769,
+      "avg_temp_c": 24.4735,
+      "soil_moisture_pct": null,
+      "fertilizer_kg": 198.5469,
+      "field_size_ha": 1.3012,
+      "season": "A",
+      "cooperative_support": 1
+    }
+  }
+}

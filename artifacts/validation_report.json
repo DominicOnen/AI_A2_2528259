@@ -1,0 +1,35 @@
+{
+  "verification_code": "AI-A2-8259",
+  "before_cleaning": {
+    "rows": 261,
+    "missing_values": {
+      "soil_moisture_pct": 13,
+      "fertilizer_kg": 13
+    },
+    "exact_duplicate_rows": 3,
+    "range_violations": {}
+  },
+  "after_cleaning": {
+    "rows": 258,
+    "missing_values": {
+      "soil_moisture_pct": 13,
+      "fertilizer_kg": 13
+    },
+    "exact_duplicate_rows": 0,
+    "range_violations": {}
+  },
+  "cleaning_steps": [
+    "dropped exact duplicate rows (first occurrence kept)",
+    "missing numeric values are imputed inside the pipeline using training rows only"
+  ],
+  "leakage_check": "passed: yield_tons, high_risk and yield per hectare are not inputs",
+  "input_features": [
+    "rainfall_mm",
+    "avg_temp_c",
+    "soil_moisture_pct",
+    "fertilizer_kg",
+    "field_size_ha",
+    "season",
+    "cooperative_support"
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "verification_code": "AI-A2-8259",
+  "seed": 8259,
+  "split": {
+    "train_rows": 206,
+    "test_rows": 52,
+    "random_state": 8259
+  },
+  "task": "classification",
+  "target": "high_risk",
+  "positive_class": "high_risk = 1 (yield per hectare below the median)",
+  "baseline": "majority_baseline",
+  "baseline_note": "The majority baseline predicts one class for every row, so its ROC-AUC is 0.5 (no ranking ability) and its precision or recall can be 0.",
+  "selection_metric": "5-fold CV F1 on training rows",
+  "models": {
+    "majority_baseline": {
+      "cv_f1": 0.262295,
+      "cv_f1_std": 0.359162,
+      "cv_roc_auc": 0.5,
+      "test_precision": 0.0,
+      "test_recall": 0.0,
+      "test_f1": 0.0,
+      "test_roc_auc": 0.5,
+      "confusion_matrix": {
+        "labels": [
+          "not_high_risk(0)",
+          "high_risk(1)"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            26,
+            0
+          ],
+          [
+            26,
+            0
+          ]
+        ],
+        "tn": 26,
+        "fp": 0,
+        "fn": 26,
+        "tp": 0
+      }
+    },
+    "logistic_regression": {
+      "cv_f1": 0.932824,
+      "cv_f1_std": 0.032338,
+      "cv_roc_auc": 0.992948,
+      "test_precision": 0.962963,
+      "test_recall": 1.0,
+      "test_f1": 0.981132,
+      "test_roc_auc": 0.991124,
+      "confusion_matrix": {
+        "labels": [
+          "not_high_risk(0)",
+          "high_risk(1)"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            25,
+            1
+          ],
+          [
+            0,
+            26
+          ]
+        ],
+        "tn": 25,
+        "fp": 1,
+        "fn": 0,
+        "tp": 26
+      }
+    },
+    "random_forest": {
+      "cv_f1": 0.943485,
+      "cv_f1_std": 0.0261,
+      "cv_roc_auc": 0.991451,
+      "test_precision": 0.857143,
+      "test_recall": 0.923077,
+      "test_f1": 0.888889,
+      "test_roc_auc": 0.968935,
+      "confusion_matrix": {
+        "labels": [
+          "not_high_risk(0)",
+          "high_risk(1)"
+        ],
+        "rows_actual_columns_predicted": [
+          [
+            22,
+            4
+          ],
+          [
+            2,
+            24
+          ]
+        ],
+        "tn": 22,
+        "fp": 4,
+        "fn": 2,
+        "tp": 24
+      }
+    }
+  },
+  "selected_model": "logistic_regression",
+  "selection_reason": "random_forest had the highest 5-fold cross-validated F1 on the training rows (0.943485). Rule: choose the simplest model within one standard error of the best (F1 >= 0.931813). Selected: logistic_regression (CV F1 0.932824) versus the majority baseline (0.262295). Test rows were used only to report final scores.",
+  "most_confident_test_error": {
+    "row_id": 27,
+    "actual_high_risk": 0,
+    "predicted_high_risk": 1,
+    "predicted_probability": 0.882593,
+    "yield_tons": 16.5787,
+    "inputs": {
+      "rainfall_mm": 1263.7595,
+      "avg_temp_c": 20.3324,
+      "soil_moisture_pct": 49.2899,
+      "fertilizer_kg": 168.1192,
+      "field_size_ha": 2.949,
+      "season": "A",
+      "cooperative_support": 1
+    }
+  }
+}

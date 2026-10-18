@@ -1,0 +1,10 @@
+# Keep the dataset byte-identical on every OS so its SHA-256 fingerprint never changes.
+*.csv   text eol=lf
+*.json  text eol=lf
+*.txt   text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+*.joblib binary
+*.png    binary
+*.pdf    binary
+*.mp4    binary
