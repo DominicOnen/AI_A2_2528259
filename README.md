@@ -47,7 +47,7 @@ Extra command (evidence for the written interpretations): `python -m src.error_a
 | Operating system used in development | Linux |
 | **Tested on my own computer** | Windows 11 Pro 21H2, Python 3.14.7 (17 passed) |
 | Repository URL | https://github.com/DominicOnen/AI_A2_2528259 |
-| **Code commit hash** | 45907a7903dcc070ed1fc265db4fe439047e23cd |
+| **Code commit hash** | 5a3527313d44f4aaea605868af27180398065d05 |
 | Final commit hash | shown in the demo video and in the Moodle submission |
 
 ## Files
