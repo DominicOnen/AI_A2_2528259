@@ -39,6 +39,8 @@ uvicorn app:app --host 127.0.0.1 --port 8000
 
 Extra command (evidence for the written interpretations): `python -m src.error_analysis`
 
+
+
 | Item | Value |
 | --- | --- |
 | Python version used in development | 3.13.16 |
